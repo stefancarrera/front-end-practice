@@ -8,31 +8,34 @@
   <title>Splitter</title>
 </head>
 <body>
-  <div>
+  <div class="container">
+
     <div>
       <p>
-        SPIL<br>
+        SPLI<br>
         TTER
       </p>
     </div>
-    <div id="billInput">
-      <form>
-          <label for="bill">Bill</label>
-          <input id="bill" name="bill" value="$" type="text">
-
+    <div class="row">
+      <div id="billInput" class="col">
+        <label for="bill">Bill</label>
+        <input id="bill" name="bill" value="$" type="text">
+        <form>
           <label for="tipAmt">Select Tip %</label>
-          <input name="tipAmt" type="button" id="5" value="5%">
-          <input name="tipAmt" type="button" id="10" value="10%">
-          <input name="tipAmt" type="button" id="15" value="15%">
-          <input name="tipAmt" type="button" id="25" value="25%">
-          <input name="tipAmt" type="button" id="50" value="50%">
-          <input name="tipAmt" type="button" id="custom" value="Custom">
-
-          <label for="numPeople">Number of People</label>
-          <input type="number" name="numPeople" id="numPeople" min="1">
+          <div>
+            <input name="tipAmt" type="button" id="5" value="5%">
+            <input name="tipAmt" type="button" id="10" value="10%">
+            <input name="tipAmt" type="button" id="15" value="15%">
+            <input name="tipAmt" type="button" id="25" value="25%">
+            <input name="tipAmt" type="button" id="50" value="50%">
+            <input name="tipAmt" type="button" id="custom" value="Custom">
+          </div>
         </form>
+        <label for="numPeople">Number of People</label>
+        <input type="number" name="numPeople" id="numPeople" min="1">
+
       </div>
-      <div id="tipOutput">
+      <div id="tipOutput" class="col tipBox">
         <div>
           <div>Tip Amount</div>
           <div>Number</div>
@@ -47,6 +50,7 @@
     <div>
 
     </div>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
