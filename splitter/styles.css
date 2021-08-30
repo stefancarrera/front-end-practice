@@ -18,6 +18,11 @@
 }
 
 .tipBox {
-  border-radius: 10%;
+  border-radius: 8%;
   background-color: hsl(183, 100%, 15%);
+  margin-left: 2rem;
+}
+
+.tipAmt {
+  width: 60px;
 }
