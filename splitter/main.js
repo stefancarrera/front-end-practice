@@ -11,10 +11,13 @@ $tipRow.addEventListener('click', function (event) {
     if ($numPeople.value <= 1) {
       const tipAmt = parseInt($bill.value * `0.${event.target.value}`);
       $tipAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(tipAmt);
-      console.log('tip', tipAmt);
       const totalAmt = parseInt($bill.value) + parseInt(tipAmt);
-      console.log('total', totalAmt);
       $totalAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(totalAmt);
+    } else {
+      const tipAmt = parseInt($bill.value * `0.${event.target.value}`);
+      $tipAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(tipAmt / $numPeople.value);
+      const totalAmt = parseInt($bill.value) + parseInt(tipAmt);
+      $totalAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(totalAmt / $numPeople.value);
     }
   }
 });
