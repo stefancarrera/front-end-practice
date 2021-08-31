@@ -3,6 +3,7 @@ const $tipRow = document.getElementById('tipRow');
 const $tipAmtPer = document.getElementById('tipAmtPer');
 const $totalAmtPer = document.getElementById('totalAmtPer');
 const $numPeople = document.getElementById('numPeople');
+const $reset = document.getElementById('reset');
 
 $tipRow.addEventListener('click', function (event) {
   if (parseInt($bill.value) <= 0) {
@@ -20,4 +21,11 @@ $tipRow.addEventListener('click', function (event) {
       $totalAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(totalAmt / $numPeople.value);
     }
   }
+});
+
+$reset.addEventListener('click', function (event) {
+  $tipAmtPer.textContent = '$0.00';
+  $totalAmtPer.textContent = '$0.00';
+  $bill.value = '0.00';
+  $numPeople.value = '1';
 });
