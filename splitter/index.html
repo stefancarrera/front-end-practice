@@ -4,20 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
   <title>Splitter</title>
 </head>
 <body>
   <div class="container">
-
     <div>
       <p>
         SPLI<br>
         TTER
       </p>
     </div>
-    <div class="row">
-      <div id="billInput" class="col">
+    <div class="row calcBox">
+      <div id="billInput" class="colHalf">
         <label for="bill">Bill</label>
         <input id="bill" name="bill" type="text" value="0.00">
         <form>
@@ -36,7 +38,7 @@
         <input type="number" name="numPeople" id="numPeople" min="1" value="1">
 
       </div>
-      <div id="tipOutput" class="col tipBox">
+      <div id="tipOutput" class="colHalf tipBox">
         <div class="row">
           <div class="col">
             <div>Tip Amount</div>
