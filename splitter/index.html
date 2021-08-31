@@ -19,16 +19,16 @@
     <div class="row">
       <div id="billInput" class="col">
         <label for="bill">Bill</label>
-        <input id="bill" name="bill" value="$" type="text">
+        <input id="bill" name="bill" type="text" value="0.00">
         <form>
           <label for="tipAmt">Select Tip %</label>
-          <div>
-            <input class="tipAmt" name="tipAmt" type="button" id="5" value="5%">
-            <input  class="tipAmt" name="tipAmt" type="button" id="10" value="10%">
-            <input class="tipAmt" name="tipAmt" type="button" id="15" value="15%">
+          <div id="tipRow">
+            <input class="tipAmt" name="tipAmt" type="button" id="10" value="10">
+            <input  class="tipAmt" name="tipAmt" type="button" id="15" value="15">
+            <input class="tipAmt" name="tipAmt" type="button" id="20" value="20">
             <br>
-            <input class="tipAmt" name="tipAmt" type="button" id="25" value="25%">
-            <input class="tipAmt" name="tipAmt" type="button" id="50" value="50%">
+            <input class="tipAmt" name="tipAmt" type="button" id="25" value="25">
+            <input class="tipAmt" name="tipAmt" type="button" id="50" value="50">
             <input class="tipAmt" name="tipAmt" type="button" id="custom" value="Custom">
           </div>
         </form>
@@ -38,12 +38,18 @@
       </div>
       <div id="tipOutput" class="col tipBox">
         <div class="row">
-          <div>Tip Amount</div>
-          <div>Number</div>
+          <div class="col">
+            <div>Tip Amount</div>
+            <div>/ person</div>
+          </div>
+          <div class="col" id="tipAmtPer">$0.00</div>
         </div>
         <div class="row">
-          <div>Total</div>
-          <div>Number</div>
+          <div class="col">
+            <div>Total</div>
+            <div>/ person</div>
+          </div>
+          <div class="col" id="totalAmtPer">$0.00</div>
         </div>
         <button type="submit" id="reset">RESET</button>
       </div>
