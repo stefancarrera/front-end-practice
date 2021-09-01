@@ -1,14 +1,18 @@
 body {
   font-family: 'Space Mono', monospace;
-  font-size: 24px;
   background-color: hsl(185, 41%, 84%);
 }
 
 button {
-  width: 80%;
+  width: 85%;
   margin-top: 25%;
   margin-bottom: 10%;
-  height: 2.5rem;
+  height: 2.8rem;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 .container {
@@ -62,4 +66,32 @@ button {
 
 .tipAmt {
   width: 60px;
+}
+
+.tipRow {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tipTextCol {
+  margin-right: 4rem;
+}
+
+.totalTextCol {
+  margin-right: 6rem;
+}
+
+.tipNum {
+  font-size: 34px;
+  color: hsl(172, 67%, 45%);
+}
+
+.smlFont {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(184, 14%, 56%);
+}
+
+.lrgFont {
+  color: hsl(189, 41%, 97%);
 }
