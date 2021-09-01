@@ -4,6 +4,13 @@ body {
   background-color: hsl(185, 41%, 84%);
 }
 
+button {
+  width: 80%;
+  margin-top: 25%;
+  margin-bottom: 10%;
+  height: 2.5rem;
+}
+
 .container {
   flex-wrap: wrap;
   display: flex;
@@ -27,20 +34,30 @@ body {
 .colHalf {
   display: flex;
   flex-direction: column;
-
-  /* width: 50%; */
 }
 
 .calcBox {
   width: 800px;
+  height: 400px;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 8%;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .tipBox {
-  border-radius: 8%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
   background-color: hsl(183, 100%, 15%);
   margin-left: 2rem;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.billBox {
+  width: 40%;
 }
 
 .tipAmt {
