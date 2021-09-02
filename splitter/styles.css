@@ -12,11 +12,64 @@ button {
   color: hsl(183, 100%, 15%);
   font-weight: 700;
   border-radius: 5px;
+  border-style: none;
   font-size: 16px;
+}
+
+button:hover {
+  background-color: hsl(185, 41%, 84%);
 }
 
 h1 {
   color: hsl(183, 100%, 15%);
+}
+
+label {
+  text-align: left;
+}
+
+.btnInput {
+  font-family: 'Space Mono', monospace;
+  width: 73px;
+  height: 30px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 3px;
+  border-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0.3rem 0.3rem;
+}
+
+.btnInput:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+.customInput {
+  font-family: 'Space Mono', monospace;
+  width: 70px;
+  height: 30px;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  border-radius: 3px;
+  border-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0.3rem 0.3rem;
+  text-align: center;
+}
+
+.customInput:hover {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  border-style: solid;
+  border-color: hsl(185, 41%, 84%);
+}
+
+.numInput {
+  height: 30px;
+  width: 246px;
 }
 
 .container {
@@ -42,23 +95,24 @@ h1 {
 .colHalf {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .calcBox {
-  width: 800px;
-  height: 400px;
+  width: 700px;
+  height: 350px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .tipBox {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: hsl(183, 100%, 15%);
-  margin-left: 2rem;
   width: 40%;
   justify-content: center;
   align-items: center;
@@ -78,11 +132,11 @@ h1 {
 }
 
 .tipTextCol {
-  margin-right: 4rem;
+  margin-right: 3rem;
 }
 
 .totalTextCol {
-  margin-right: 6rem;
+  margin-right: 4rem;
 }
 
 .tipNum {
