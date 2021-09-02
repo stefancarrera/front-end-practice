@@ -20,8 +20,10 @@
     </div>
     <div class="row calcBox">
       <div id="billInput" class="colHalf billBox">
-        <label for="bill">Bill</label>
-        <input id="bill" name="bill" type="text" class="numInput" value="0.00">
+        <form class="numPplRow">
+          <label for="bill">Bill</label>
+          <input id="bill" name="bill" type="text" class="numInput" value="0.00">
+        </form>
         <form>
           <label for="tipAmt">Select Tip %</label>
           <div id="tipRow">
@@ -34,8 +36,10 @@
             <input class="customInput" name="tipAmt" type="text" id="custom" value="Custom">
           </div>
         </form>
-        <label for="numPeople">Number of People</label>
-        <input type="number" name="numPeople" id="numPeople" min="1" class="numInput" value="1">
+        <form class="numPplRow">
+          <label for="numPeople">Number of People</label>
+          <input type="number" name="numPeople" id="numPeople" min="1" class="numInput" value="1">
+        </form>
 
       </div>
       <div id="tipOutput" class="colHalf tipBox">
