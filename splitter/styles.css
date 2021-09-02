@@ -15,6 +15,10 @@ button {
   font-size: 16px;
 }
 
+h1 {
+  color: hsl(183, 100%, 15%);
+}
+
 .container {
   flex-wrap: wrap;
   display: flex;
