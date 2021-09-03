@@ -8,12 +8,12 @@ const $custom = document.getElementById('custom');
 
 $tipRow.addEventListener('click', function (event) {
   if ($numPeople.value <= 1) {
-    const tipAmt = parseInt($bill.value * `0.${event.target.value}`);
+    const tipAmt = parseInt($bill.value * `0.${event.target.value.slice(0, 2)}`);
     $tipAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(tipAmt);
     const totalAmt = parseInt($bill.value) + parseInt(tipAmt);
     $totalAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(totalAmt);
   } else {
-    const tipAmt = parseInt($bill.value * `0.${event.target.value}`);
+    const tipAmt = parseInt($bill.value * `0.${event.target.value.slice(0, 2)}`);
     $tipAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(tipAmt / $numPeople.value);
     const totalAmt = parseInt($bill.value) + parseInt(tipAmt);
     $totalAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(totalAmt / $numPeople.value);
@@ -22,12 +22,12 @@ $tipRow.addEventListener('click', function (event) {
 
 $custom.addEventListener('change', function (event) {
   if ($numPeople.value <= 1) {
-    const tipAmt = parseInt($bill.value * `0.${event.target.value}`);
+    const tipAmt = parseInt($bill.value * `0.${event.target.value.slice(0, 2)}`);
     $tipAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(tipAmt);
     const totalAmt = parseInt($bill.value) + parseInt(tipAmt);
     $totalAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(totalAmt);
   } else {
-    const tipAmt = parseInt($bill.value * `0.${event.target.value}`);
+    const tipAmt = parseInt($bill.value * `0.${event.target.value.slice(0, 2)}`);
     $tipAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(tipAmt / $numPeople.value);
     const totalAmt = parseInt($bill.value) + parseInt(tipAmt);
     $totalAmtPer.textContent = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(totalAmt / $numPeople.value);
