@@ -1,0 +1,20 @@
+.topBox {
+  /* top div Orange image */
+}
+
+.box {
+  /* middle boxes, width-height */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clientTest {
+  /* margins around row - desktop only, media query for mobile to remove this */
+}
+
+.smBox {
+  /* thinner boxes to be used in the bottom half of the page */
+}
