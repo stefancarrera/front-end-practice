@@ -1,18 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 18px;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
   margin: auto;
   max-width: 1440px;
 }
 
 .topBox {
-  width: 100%;
+  min-width: 375px;
+  max-width: 1440px;
   max-height: 800px;
   position: relative;
 }
@@ -48,12 +50,13 @@ body {
 
 .box {
   /* middle boxes, width-height */
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  max-height: 600px;
+  width: 100%;
+  height: 600px;
 }
 
 .textBox {
@@ -94,11 +97,21 @@ body {
 
 .smBox {
   /* thinner boxes to be used in the bottom half of the page */
-  width: calc(100% / 3);
+  width: 100%;
 }
 
 .imgCircle {
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 75px;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 800px) {
+  .box {
+    width: 50%;
+  }
+
+  .smBox {
+    width: calc(100% / 3);
+  }
 }
