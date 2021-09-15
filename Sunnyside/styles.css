@@ -57,7 +57,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 600px;
+  height: 359px;
 }
 
 .textBox {
@@ -104,6 +104,10 @@ body {
   text-align: center;
 }
 
+.fourSmBox {
+  width: 50%;
+}
+
 .imgCircle {
   height: 75px;
   width: 75px;
@@ -117,9 +121,14 @@ body {
 @media screen and (min-width: 800px) {
   .box {
     width: 50%;
+    height: 600px;
   }
 
   .smBox {
     width: calc(100% / 3);
+  }
+
+  .fourSmBox {
+    width: calc(100% / 4);
   }
 }
