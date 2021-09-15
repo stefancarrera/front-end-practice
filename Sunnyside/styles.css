@@ -69,6 +69,18 @@ body {
   justify-content: space-between;
 }
 
+.rowFourPosRel {
+  position: relative;
+}
+
+.textBoxPosAbs {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70%;
+  text-align: center;
+}
+
 .clientTest {
   /* margins around row - desktop only, media query for mobile to remove this */
 }
