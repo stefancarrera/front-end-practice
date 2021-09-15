@@ -65,6 +65,13 @@ body {
   flex-wrap: wrap;
 }
 
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .rowSpaceBtw {
   justify-content: space-between;
 }
@@ -87,4 +94,11 @@ body {
 
 .smBox {
   /* thinner boxes to be used in the bottom half of the page */
+  width: calc(100% / 3);
+}
+
+.imgCircle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
